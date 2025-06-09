@@ -19,7 +19,7 @@ export default function App() {
   const perPage = 12;
 
   const { data, isLoading, isError } = useQuery({
-    queryKey: ["notes", currentPage, debounceSearchTerm],
+    queryKey: ["notes", debounceSearchTerm, currentPage],
     queryFn: () => fetchNotes(currentPage, debounceSearchTerm, perPage),
     placeholderData: keepPreviousData,
   });
