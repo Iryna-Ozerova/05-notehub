@@ -8,7 +8,7 @@ import NoteModal from "../NoteModal/NoteModal";
 import SearchBox from "../SearchBox/SearchBox";
 import Pagination from "../Pagination/Pagination";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
-
+//css
 import css from "./App.module.css";
 
 export default function App() {
