@@ -24,7 +24,7 @@ export const fetchNotes = async (
   perPage = 12
 ): Promise<FetchNotesResponse> => {
   const params: Record<string, string | number> = { page, perPage };
-  if (query.trim()) params.q = query;
+  if (query.trim()) params.search = query;
 
   const res = await noteServiceClient.get<FetchNotesResponse>('/', { params });
   return res.data;
