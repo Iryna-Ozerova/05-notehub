@@ -8,7 +8,7 @@ const TOKEN = import.meta.env.VITE_NOTEHUB_TOKEN;
 const noteServiceClient = axios.create({
   baseURL: BASE_URL,
   headers: {
-    Authorization: `Bearer ${TOKEN}`,
+    Authorization: `Bearer import.meta.env.VITE_NOTEHUB_TOKEN`,
   },
 });
 
